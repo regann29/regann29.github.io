@@ -1,0 +1,144 @@
+{
+    "about": {
+        "intro": "I'm a *student developer* focused on building **secure and practical software**.",
+        "description": "I'm a BITM student from Hetauda who learns by building. I make *security* tools, *AI* agents and *web* apps with Python, and I care about software that is **simple**, **practical** and **safe to use**.",
+        "full": "Hi, I'm **Regan K.C.**, a BITM student in Hetauda, Nepal, and co-founder of **PIXEL7 MEDIA**.\n\nI learn by building. On my GitHub you'll find a tool that spots scam emails and links, a helper that sorts security alerts, an app that checks websites for weak spots, an assistant that does coding tasks, a checker that decides if software is ready to release, and a small app for swapping skills.\n\nAt PIXEL7 MEDIA I work on websites and digital design for clients. I have also worked as an IT assistant at a boarding school, helping with everyday computer and technical problems, and I helped start a clothing brand called EXE_STYLES while studying science.\n\nI'm aiming for a career in **backend development**, **cybersecurity** and **AI-driven applications**, and I'm open to internships, junior roles and freelance work."
+    },
+    "manifesto": [
+        "Secure by default",
+        "Simple and practical",
+        "Learn by building",
+        "Security",
+        "AI agents",
+        "Backend"
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "SOC Copilot",
+            "category": "Security Tool",
+            "year": "2026",
+            "description": "SOC Copilot is a helper for security teams. Every day they receive piles of warning alerts, and most of them are noise.\n\nThis tool collects the alerts, spots the suspicious ones, checks them against known threats and writes a clear report, so people can react faster.",
+            "image": "/projects/soc.webp",
+            "repo": "https://github.com/regann29/AI-SOC-Triage",
+            "stack": [
+                "Python",
+                "Threat intelligence"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Phishing Detector",
+            "category": "Security Tool",
+            "year": "2026",
+            "description": "Scam emails and fake links trick people every day. This app checks a link or an email and gives it a risk score from 0 to 100.\n\nIt also explains in simple terms why something looks suspicious, so people can learn to spot scams themselves.",
+            "image": "/projects/phishing.webp",
+            "repo": "https://github.com/regann29/AI-Powered-Phishing-Detection-System",
+            "stack": [
+                "Python",
+                "Flask",
+                "React",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Coding Agent",
+            "category": "AI Agent",
+            "year": "2026",
+            "description": "An assistant that does coding tasks from plain English instructions. You describe what you want, and it reads the project, makes the changes and tests them.\n\nIt has built-in safety limits, so it cannot open private files or run risky commands.",
+            "image": "/projects/coding-agent.webp",
+            "repo": "https://github.com/regann29/Coding-agent",
+            "stack": [
+                "Python",
+                "Anthropic API"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "API Security Scanner",
+            "category": "Security Tool",
+            "year": "2026",
+            "description": "Apps talk to each other through APIs, and a small mistake there can leave a door open. This tool checks for weak spots such as missing login checks or unsafe settings.\n\nIt always asks for permission before testing and saves what it finds, so the owner can fix the problems.",
+            "image": "/projects/api-scan.webp",
+            "repo": "https://github.com/regann29/API-scan",
+            "stack": [
+                "Python",
+                "FastAPI",
+                "PostgreSQL",
+                "Docker"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Triad",
+            "category": "AI Agents",
+            "year": "2026",
+            "description": "Triad helps decide whether a piece of software is ready to be released. Three helpers work together: one runs the tests, one estimates the risk, and one makes the final call, GO or HOLD.\n\nIt can also fix small problems safely, which saves time before a release.",
+            "image": "/projects/triad.webp",
+            "repo": "https://github.com/regann29/Triad",
+            "stack": [
+                "Python",
+                "Node.js"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "SkillSwap Lite",
+            "category": "Web App",
+            "year": "2026",
+            "description": "A small app where people post a skill they can teach and a skill they want to learn, then find others to swap with.\n\nIt works in the browser and needs no account, so anyone can try it right away.",
+            "image": "/projects/skillswap.webp",
+            "repo": "https://github.com/regann29/Skillswap",
+            "stack": [
+                "React",
+                "CSS"
+            ]
+        }
+    ],
+    "roadmap": [
+        {
+            "id": "01",
+            "year": "2023",
+            "description": "I finished my Secondary Education Examination (SEE) at Baljagriti with a GPA of 3.70.",
+            "stack": [
+                "Baljagriti"
+            ]
+        },
+        {
+            "id": "02",
+            "year": "2025",
+            "description": "I finished higher secondary school (+2) in Science with Computer Science at Hetauda School of Management Secondary School, with a GPA of 3.13. While studying science, I also helped start a clothing brand called EXE_STYLES.",
+            "stack": [
+                "Computer Science",
+                "EXE_STYLES"
+            ]
+        },
+        {
+            "id": "03",
+            "year": "2026",
+            "description": "In February I co-founded PIXEL7 MEDIA, where I build websites and digital design for clients.",
+            "stack": [
+                "Web development",
+                "Digital design"
+            ]
+        },
+        {
+            "id": "04",
+            "year": "2026",
+            "description": "In May I took a cybersecurity course at ADBI and joined a real cyber attack simulation workshop run by VRIT Jobs.",
+            "stack": [
+                "Cybersecurity"
+            ]
+        },
+        {
+            "id": "05",
+            "year": "2026",
+            "description": "In August I started my Bachelor of Information Technology Management (BITM) at Hetauda School of Management and Social Sciences, and I keep building projects with Python.",
+            "stack": [
+                "BITM",
+                "Python"
+            ]
+        }
+    ]
+}

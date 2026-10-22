@@ -1,0 +1,44 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "stack": "Stack",
+        "projects": "Projects",
+        "roadmap": "Journey",
+        "contact": "Contact"
+    },
+    "title": {
+        "about": "About",
+        "stack": "Stack",
+        "projects": "Projects",
+        "roadmap": "Journey",
+        "contact": "Contact"
+    },
+    "scrollDown": "Scroll",
+    "contactMe": "Contact Me",
+    "exploreProjects": "Explore Projects",
+    "readFullVersion": "Read Full Version",
+    "frontendStack": "Frontend",
+    "backendStack": "Backend",
+    "databaseStack": "Data and AI",
+    "toolsStack": "Tools",
+    "projectsIntro": "A collection of *tools*, *agents* and *apps* I have built, all open on **GitHub**.",
+    "projectsScrollText": "Scroll to explore",
+    "projectsEndText": "End",
+    "roadmapDescription": "A short timeline of my studies, work and training so far.",
+    "contactIntroText": "Hiring for an internship or junior role, or need a website or digital design through PIXEL7 MEDIA? Tell me what you need.",
+    "sendEmail": "Send an Email",
+    "directLine": "Direct Line",
+    "allRightsReserved": "All rights reserved.",
+    "contactModalDescription": "Send me a message and I'll get back to you as soon as I can.",
+    "projectDetails": "Details about",
+    "aboutProject": "About the Project",
+    "technologies": "Technologies",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "notFound": {
+        "title": "Page Not Found",
+        "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+        "goHome": "Back to Home"
+    }
+}
