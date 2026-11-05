@@ -100,7 +100,7 @@ src/
 
 ## Professional Direction
 
-I am open to cybersecurity internships, junior security roles, security-focused freelance work, and opportunities involving backend development or AI-driven applications.
+I am open to cybersecurity internships, junior security roles, security-focused freelance work, and opportunities involving backend development or AI/ML-driven applications.
 
 ## Contact
 
