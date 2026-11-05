@@ -62,14 +62,6 @@ The portfolio and featured projects use technologies including:
 - Node.js 20 or newer
 - npm or Bun
 
-### Installation
-
-```bash
-git clone https://github.com/regann29/regann29.github.io.git
-cd regann29.github.io
-npm install
-```
-
 ### Development
 
 ```bash
