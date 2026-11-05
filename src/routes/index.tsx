@@ -3,7 +3,7 @@ import ScrollProgress from "@/components/layout/scroll-progress";
 import ManifestoFlow from "@/components/effects/manifesto-flow";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
-import Stack from "@/components/sections/stack";
+import Services from "@/components/sections/services";
 import Projects from "@/components/sections/projects";
 import Roadmap from "@/components/sections/roadmap";
 import Contact from "@/components/sections/contact";
@@ -46,8 +46,8 @@ function Home() {
             <About />
           </section>
           <ManifestoFlow />
-          <section id="stack">
-            <Stack />
+          <section id="services">
+            <Services />
           </section>
           <ManifestoFlow reverse />
           <section id="projects">

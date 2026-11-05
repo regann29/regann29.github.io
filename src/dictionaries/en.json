@@ -2,14 +2,14 @@
     "nav": {
         "home": "Home",
         "about": "About",
-        "stack": "Stack",
+        "services": "Services",
         "projects": "Projects",
         "roadmap": "Journey",
         "contact": "Contact"
     },
     "title": {
         "about": "About",
-        "stack": "Stack",
+        "services": "Services",
         "projects": "Projects",
         "roadmap": "Journey",
         "contact": "Contact"
@@ -18,10 +18,6 @@
     "contactMe": "Contact Me",
     "exploreProjects": "Explore Projects",
     "readFullVersion": "Read Full Version",
-    "frontendStack": "Frontend",
-    "backendStack": "Backend",
-    "databaseStack": "Data and AI",
-    "toolsStack": "Tools",
     "projectsIntro": "A collection of *tools*, *agents* and *apps* I have built, all open on **GitHub**.",
     "projectsScrollText": "Scroll to explore",
     "projectsEndText": "End",

@@ -36,7 +36,7 @@ export default function Navbar() {
   const navLinks = useMemo(() => [
     { name: dict.nav.home, href: "#home" },
     { name: dict.nav.about, href: "#about" },
-    { name: dict.nav.stack, href: "#stack" },
+    { name: dict.nav.services, href: "#services" },
     { name: dict.nav.projects, href: "#projects" },
     { name: dict.nav.roadmap, href: "#roadmap" },
     { name: dict.nav.contact, href: "#contact" },
