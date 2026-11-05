@@ -31,16 +31,23 @@ export default function Navbar() {
   const py = useTransform(scrollY, [0, dimensions.scrollHeight], [24, 12]);
 
   const startWidth = Math.max(dimensions.screenWidth, dimensions.containerWidth);
-  const navMaxWidth = useTransform(scrollY, [0, dimensions.scrollHeight], [startWidth, dimensions.containerWidth]);
+  const navMaxWidth = useTransform(
+    scrollY,
+    [0, dimensions.scrollHeight],
+    [startWidth, dimensions.containerWidth],
+  );
 
-  const navLinks = useMemo(() => [
-    { name: dict.nav.home, href: "#home" },
-    { name: dict.nav.about, href: "#about" },
-    { name: dict.nav.services, href: "#services" },
-    { name: dict.nav.projects, href: "#projects" },
-    { name: dict.nav.roadmap, href: "#roadmap" },
-    { name: dict.nav.contact, href: "#contact" },
-  ], [dict.nav]);
+  const navLinks = useMemo(
+    () => [
+      { name: dict.nav.home, href: "#home" },
+      { name: dict.nav.about, href: "#about" },
+      { name: dict.nav.services, href: "#services" },
+      { name: dict.nav.projects, href: "#projects" },
+      { name: dict.nav.roadmap, href: "#roadmap" },
+      { name: dict.nav.contact, href: "#contact" },
+    ],
+    [dict.nav],
+  );
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -76,53 +83,58 @@ export default function Navbar() {
     };
   }, [isMobileMenuOpen, lenis]);
 
-  const scrollToSection = useCallback((e: React.MouseEvent<HTMLAnchorElement> | null, href: string, push = true) => {
-    e?.preventDefault();
-    const targetId = href.replace("#", "");
-    if (push && window.location.hash !== href) {
-      const url = targetId === "home" ? window.location.pathname : href;
-      window.history.pushState(null, "", url);
-    }
-    const elem = document.getElementById(targetId);
+  const scrollToSection = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement> | null, href: string, push = true) => {
+      e?.preventDefault();
+      const targetId = href.replace("#", "");
+      if (push && window.location.hash !== href) {
+        const url = targetId === "home" ? window.location.pathname : href;
+        window.history.pushState(null, "", url);
+      }
+      const elem = document.getElementById(targetId);
 
-    if (elem || targetId === "home") {
-      setIsMobileMenuOpen(false);
+      if (elem || targetId === "home") {
+        setIsMobileMenuOpen(false);
 
-      setTimeout(() => {
-        let navbarHeight = 80;
-        if (headerRef.current) {
-          const currentHeight = headerRef.current.offsetHeight;
-          const currentScroll = window.scrollY;
-          const currentPy = currentScroll >= dimensions.scrollHeight
-            ? 12
-            : 24 - (currentScroll / dimensions.scrollHeight) * 12;
-          const heightDifference = (currentPy - 12) * 2;
-          navbarHeight = Math.max(currentHeight - heightDifference, 0);
-        }
-
-        const isDesktop = dimensions.screenWidth >= 1280;
-        const isAboutOnDesktop = targetId === "about" && isDesktop;
-
-        if (lenis) {
-          lenis.scrollTo(targetId === "home" ? 0 : elem!, {
-            offset: targetId === "home" ? 0 : isAboutOnDesktop ? 0 : -navbarHeight,
-            duration: 1.5,
-          });
-        } else {
-          if (targetId === "home") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          } else if (elem) {
-            const rect = elem.getBoundingClientRect();
-            const offsetPosition = rect.top + window.scrollY - (isAboutOnDesktop ? 0 : navbarHeight);
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: "smooth",
-            });
+        setTimeout(() => {
+          let navbarHeight = 80;
+          if (headerRef.current) {
+            const currentHeight = headerRef.current.offsetHeight;
+            const currentScroll = window.scrollY;
+            const currentPy =
+              currentScroll >= dimensions.scrollHeight
+                ? 12
+                : 24 - (currentScroll / dimensions.scrollHeight) * 12;
+            const heightDifference = (currentPy - 12) * 2;
+            navbarHeight = Math.max(currentHeight - heightDifference, 0);
           }
-        }
-      }, 100);
-    }
-  }, [lenis, dimensions.scrollHeight, dimensions.screenWidth]);
+
+          const isDesktop = dimensions.screenWidth >= 1280;
+          const isAboutOnDesktop = targetId === "about" && isDesktop;
+
+          if (lenis) {
+            lenis.scrollTo(targetId === "home" ? 0 : elem!, {
+              offset: targetId === "home" ? 0 : isAboutOnDesktop ? 0 : -navbarHeight,
+              duration: 1.5,
+            });
+          } else {
+            if (targetId === "home") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            } else if (elem) {
+              const rect = elem.getBoundingClientRect();
+              const offsetPosition =
+                rect.top + window.scrollY - (isAboutOnDesktop ? 0 : navbarHeight);
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+              });
+            }
+          }
+        }, 100);
+      }
+    },
+    [lenis, dimensions.scrollHeight, dimensions.screenWidth],
+  );
 
   // Back/forward between sections, and opening a shared #section link.
   useEffect(() => {
@@ -198,7 +210,7 @@ export default function Navbar() {
 
         <div className="flex xl:hidden items-center gap-4">
           <button
-            onClick={() => setIsMobileMenuOpen(prev => !prev)}
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             className="relative z-110 p-2 text-foreground focus:outline-none"
             aria-label="Toggle Menu"
           >
@@ -227,9 +239,9 @@ export default function Navbar() {
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{
-                      delay: 0.1 + (i * 0.05),
+                      delay: 0.1 + i * 0.05,
                       duration: 0.5,
-                      ease: [0.22, 1, 0.36, 1]
+                      ease: [0.22, 1, 0.36, 1],
                     }}
                   >
                     <Link
@@ -252,7 +264,7 @@ export default function Navbar() {
                 className="mt-8 flex items-center justify-between"
               >
                 <div className="flex items-center gap-4">
-                        <ThemeSwitcher />
+                  <ThemeSwitcher />
                 </div>
               </motion.div>
             </div>
