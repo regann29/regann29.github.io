@@ -7,20 +7,15 @@ import {
   ClipboardCheck,
   CodeXml,
   Globe,
-  HardDrive,
   KeyRound,
   Laptop,
   LifeBuoy,
-  LockKeyhole,
-  MailCheck,
-  Network,
   PanelsTopLeft,
   Radar,
   RefreshCw,
   ScanSearch,
   Settings,
   ShieldCheck,
-  UserRoundCheck,
   UsersRound,
   Wifi,
 } from "lucide-react";
@@ -47,6 +42,8 @@ const serviceIcons = [
   RefreshCw,
   LifeBuoy,
 ];
+
+const serviceIconOffsets = [0, 3, 7, 10, 13, 16];
 
 export default function Services() {
   const { content, dict } = useLanguage();
@@ -79,7 +76,8 @@ export default function Services() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {group.items.map((service, serviceIndex) => {
-                    const Icon = serviceIcons[groupIndex * 4 + serviceIndex];
+                    const Icon =
+                      serviceIcons[serviceIconOffsets[groupIndex] + serviceIndex];
 
                     return (
                       <article
