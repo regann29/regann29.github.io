@@ -1,25 +1,51 @@
 "use client";
 
 import {
+  ArchiveRestore,
+  AtSign,
+  DatabaseBackup,
   ClipboardCheck,
-  FileSearch,
-  LaptopMinimalCheck,
+  CodeXml,
+  Globe,
+  HardDrive,
+  KeyRound,
+  Laptop,
+  LifeBuoy,
+  LockKeyhole,
   MailCheck,
+  Network,
+  PanelsTopLeft,
   Radar,
+  RefreshCw,
   ScanSearch,
+  Settings,
   ShieldCheck,
+  UserRoundCheck,
+  UsersRound,
+  Wifi,
 } from "lucide-react";
 import { useLanguage } from "@/providers/language-provider";
 import { BlurReveal } from "@/components/effects/blur-reveal";
 
 const serviceIcons = [
+  Globe,
+  PanelsTopLeft,
+  CodeXml,
   ScanSearch,
-  MailCheck,
   ShieldCheck,
-  FileSearch,
-  Radar,
-  LaptopMinimalCheck,
+  ScanSearch,
+  Wifi,
+  Laptop,
+  DatabaseBackup,
+  ArchiveRestore,
+  Settings,
+  AtSign,
+  UsersRound,
+  KeyRound,
   ClipboardCheck,
+  Radar,
+  RefreshCw,
+  LifeBuoy,
 ];
 
 export default function Services() {
