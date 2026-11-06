@@ -67,8 +67,7 @@ export default function Services() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {group.items.map((service, serviceIndex) => {
-                    const Icon =
-                      serviceIcons[serviceIconOffsets[groupIndex] + serviceIndex];
+                    const Icon = serviceIcons[serviceIconOffsets[groupIndex] + serviceIndex];
 
                     return (
                       <article
